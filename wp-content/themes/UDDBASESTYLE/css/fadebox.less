@@ -1,0 +1,102 @@
+.fadebox{
+	position: fixed;
+	z-index: 15;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	min-height: 550px;
+	.back{
+		background: rgb(0,0,0,0.5);
+		width: 100%;
+		height: 100%;
+	}
+	.box{
+		position: absolute;
+		background: #FFF;
+		width: 60%;
+		height: 60%;
+		min-height: 580px;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		-webkit-box-shadow: 4px 4px 5px 0px rgba(128,128,128,1);
+		-moz-box-shadow: 4px 4px 5px 0px rgba(128,128,128,1);
+		box-shadow: 4px 4px 5px 0px rgba(128,128,128,1);
+		margin:auto;
+		.header{
+			background: #E96D54;
+			height: 7.5%;
+			text-transform: uppercase;
+			.closebtn{
+				height: 100%;
+				font-weight: normal;
+				color:#FFF;
+				font-size: 1em;
+				padding: 10px;
+				position: absolute;
+				right: 0px;
+				top:0px;
+				cursor: pointer;
+			}
+			.closebtn i{
+				font-size: 13px;
+				display: block;
+				/* line-height: 34px; */
+				margin-top: 5px;
+				float: right;
+				padding-left: 5px;
+			}
+		}
+		.body{
+			position: relative;
+			height: 92.5%;
+			width: 100%;
+			.contenido{
+				float: left;
+				width: 50%;
+				height: 100%;
+				.titulo{
+					position: relative;
+					height: 50px;
+					width: 100%;
+					padding: 25px;
+					padding-bottom: 0px;
+					padding-top: 13px;
+					font-size: 1.2em;
+					color: #E96D54;
+				}
+				.contenido{
+					position: relative;
+					height: 80%;
+					width: 100%;
+					padding: 25px;
+					padding-top: 0px;
+					text-align: left;
+					font-size: 0.9em;
+					overflow: hidden;
+				}
+
+			}
+			.foto{
+				float: left;
+				width: 50%;
+				padding: 25px;
+				.container-foto{
+					float: right;
+					padding-bottom: 0px;
+					max-width: 370px;
+					max-height: 370px;
+					min-width: 370px;
+					min-height: 370px;
+					overflow: hidden;
+					img{
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

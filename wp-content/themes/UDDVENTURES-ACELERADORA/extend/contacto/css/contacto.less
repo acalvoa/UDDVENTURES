@@ -1,0 +1,161 @@
+@import "../../base/css/base.less";
+.EXTEND_contacto{
+	position: relative;
+	min-height: 400px;
+	padding-left: 0px;
+	padding-right: 0px;
+	.container{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.header{
+		background: @color-header;
+		padding: 10px 0;
+		font-style: normal;
+		text-align: center;
+		font-size: 1.7em;
+		height: @header-height;
+		color: #FFF;
+		text-transform: uppercase;
+		font-family: @header-font;
+		font-weight: lighter;
+		letter-spacing: 15px;
+	}
+	.contactorow{
+		margin-left: 0px;
+		margin-right: 0px;
+		height: 100%;
+		width: 100%;
+		.title{
+			color: #666;
+			padding-left: 0px;
+			padding-bottom: 5px;
+		}
+	}
+	.left-back{
+		margin-top: 20px;
+		font-size: 2em;
+		min-height: 804px;
+		cursor: pointer;
+		color: #0B548A;
+		text-align: center;
+	}
+	.contacto-items{
+		padding-left: 0px;
+		padding-right: 0px;
+		.contact-row{
+			z-index: 2;
+			background: #1E4C88;
+			padding: 15px;
+			min-height: 300px;
+			padding-top: 40px;
+			@media (max-width: 1200px){
+			}
+			@media (max-width: 992px){
+				font-size: 0.8em;
+			}
+			@media (max-width: 750px){
+				font-size: 0.7em;
+			}
+			input,textarea{
+				padding:5px;
+				width: 80%;
+			}
+			input{
+				height: 35px;
+				width: 100%;
+				@media (max-width: 1200px){
+					width: 100%;
+				}
+				@media (max-width: 992px){
+					font-size: 1em;
+					width: 100%;
+				}
+				@media (max-width: 750px){
+					font-size: 1em;
+					width: 100%;
+				}
+			}
+			textarea{
+				height: 130px;
+				width: 100%;
+				@media (max-width: 1200px){
+					width: 100%;
+				}
+				@media (max-width: 992px){
+					font-size: 1em;
+					width: 100%;
+				}
+				@media (max-width: 750px){
+					font-size: 1em;
+					width: 100%;
+				}
+			}
+			.submit
+			{
+				height: 130px;
+				input{
+
+					position: absolute;
+					right: 0%;
+					bottom: 1px;
+					margin-right: 1px;
+					width: 200px;
+					background: #C2C3C8;
+					border: 1px solid #FFF;
+				}
+			}
+		}
+
+	}
+	.maparow{
+		z-index: 2;
+		padding-left: 0px;
+		padding-right: 0px;
+		height: 300px;
+		#mapa{
+			width: 100%;
+			height: inherit;
+		}
+	}
+
+	.locations{
+		z-index: 2;
+		cursor: pointer;
+		padding: 15px;
+		text-align: right;
+		height: 110px;
+		background: #ECEDEF;
+		@media (max-width: 1200px){
+			padding-top: 125px;
+		}
+		@media (max-width: 992px){
+			padding-top: 120px;
+		}
+		@media (max-width: 750px){
+			padding-top: 110px;
+		}
+		.location{
+			padding-bottom: 20px;
+			color: #FFF;
+			font-size: 0.75em;
+			cursor: pointer;
+			@media (max-width: 1200px){
+			}
+			@media (max-width: 992px){
+				font-size: 0.7em;
+			}
+			@media (max-width: 750px){
+				font-size: 0.6em;
+			}
+		}
+	}
+	.location1{
+		background: #ECEDEF;
+		color: #666;
+	}
+	.location2{
+		background: #F6F6F8;
+		color: #999;
+	}
+}
