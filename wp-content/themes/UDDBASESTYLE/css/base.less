@@ -27,6 +27,11 @@ body,html{
 	min-width: 660px;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	@media (min-device-width: 320px) and (max-device-width: 420px){
+		min-width: 320px;
+		max-width: 420px;
+		width: 100%;
+	}
 	//DEFINIMOS LOS TAGS BASES DEL SITIO
 	h1{
 		font-size: 3em;
@@ -46,6 +51,7 @@ body,html{
 	h6{
 		font-size: 0.5em;
 	}
+
 	//DEFINIMOS LOS ELEMENTOS BASICOS
 	div,span{
 		position: relative;
