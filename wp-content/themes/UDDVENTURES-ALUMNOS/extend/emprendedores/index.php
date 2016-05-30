@@ -10,10 +10,10 @@
 					$category = array();
 					$taxonomies = get_object_taxonomies('emprendedores');
 					$taxonomies = get_terms($taxonomies[0]);
-					foreach ( $taxonomies  as $taxonomy) {
+					foreach (array_reverse($taxonomies)  as $taxonomy) {
 						$category[] = $taxonomy->name;
 					?>
-					    <div class="tipos <?php if($numero++ === 1) echo 'active'; ?>" data-id="<?php echo $taxonomy->name; ?>"><?php echo $taxonomy->name; ?></div>
+					    <div class="tipos <?php if($numero++ === count($taxonomies)) echo 'active'; ?>" data-id="<?php echo $taxonomy->name; ?>"><?php echo $taxonomy->name; ?></div>
 					<?php
 					}
 				?>
@@ -55,7 +55,7 @@
 					}
 					wp_reset_query();// Restore global post data stomped by the_post().
 			?>
-		<div class="element-group <?php if($numero === 1) echo 'activerow'; ?>" data-id="<?php echo $vector; ?>" style="<?php if($numero++ == 1) echo 'display:block;'; ?>">
+		<div class="element-group <?php if($numero === count($category)) echo 'activerow'; ?>" data-id="<?php echo $vector; ?>" style="<?php if($numero++ == count($category)) echo 'display:block;'; ?>">
 			<!--<div class="row move_control">
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control left"><h2><i class="fa fa-angle-left"></i></h2></div>
 				<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10"></div>

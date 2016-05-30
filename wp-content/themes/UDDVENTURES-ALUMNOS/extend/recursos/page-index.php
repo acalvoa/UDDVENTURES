@@ -2,7 +2,7 @@
 	<div class="container" id="news-folder">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div class="header">RECURSOS</div>
+				<div class="header">RECURSOS Y TESTIMONIOS</div>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="subheader">

@@ -15,12 +15,12 @@
 		});
 		//CONTROLES
 		$(".EXTEND_emprendedores .left").on('click',function(){
-			if($(".EXTEND_emprendedores .activerow .containercol .newcol").length > 10){
+			if($(".EXTEND_emprendedores .activerow .containercol .newcol").length > 4){
 				$(".EXTEND_emprendedores .activerow .containercol .newcol").last().prependTo($(".EXTEND_emprendedores .activerow .containercol"));
 			}
 		});
 		$(".EXTEND_emprendedores .right").on('click',function(){
-			if($(".EXTEND_emprendedores .activerow .containercol .newcol").length > 10){
+			if($(".EXTEND_emprendedores .activerow .containercol .newcol").length > 4){
 				$(".EXTEND_emprendedores .activerow .containercol .newcol").first().appendTo($(".EXTEND_emprendedores .activerow .containercol"));
 			}
 		});
