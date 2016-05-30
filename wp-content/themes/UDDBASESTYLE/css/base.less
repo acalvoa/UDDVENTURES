@@ -27,10 +27,14 @@ body,html{
 	min-width: 660px;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	overflow-x: hidden;
 	@media (min-device-width: 320px) and (max-device-width: 420px){
 		min-width: 320px;
 		max-width: 420px;
 		width: 100%;
+	}
+	@media (min-device-width: 560px) and (max-device-width: 740px){
+		min-width: 0px;
 	}
 	//DEFINIMOS LOS TAGS BASES DEL SITIO
 	h1{

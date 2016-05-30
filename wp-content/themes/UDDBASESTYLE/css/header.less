@@ -18,6 +18,61 @@ header{
 	@media (min-device-width: 410px) and (max-device-width: 420px){
 		width: 415px;
 	}
+	@media (min-device-width: 560px) and (max-device-width: 740px){
+		width: 100%;
+	}
+	.menu-mobile{
+		height: 100%;
+		width: 70%;
+		background: rgba(0, 0, 0, 0.8);
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		z-index: 20;
+		transform: translateX(100%);
+		@media (min-device-width: 560px) and (max-device-width: 740px){
+			width: 40%;
+		}
+		.control{
+			height: 100%;
+			width: 20%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			text-align: center;
+			.center{
+				position: absolute;
+				height: 100px;
+				font-size: 4em;
+				margin: auto;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+		}
+		.menu{
+				width: 80%;
+				position: absolute;
+				left: 20%;
+				height: 100%;
+				padding-top: 50px;
+				font-size: 1rem;
+				@media (min-device-height: 320px) and (max-device-height: 360px){
+					padding-top: 30px;
+				}
+				.item{
+					width: 100%;
+					padding-top: 5px;
+					padding-bottom: 5px;
+					height: auto;
+					&:first-child{
+						height: 50px;
+						
+					}
+				}
+			}
+	}
 	//MEDIA
 	.busquedah{
 		background: #1E4C88;
@@ -105,14 +160,35 @@ header{
 				color: #333;
 				li{
 					float: left;
-					padding-right: 3px !important;
-					padding-left: 3px !important;
+					padding-right: 20px !important;
+					padding-left: 20px !important;
 					text-align: center;
 					list-style:none;
-					@media (min-device-width: 320px) and (max-device-width: 420px){
-						padding-right: 5px !important;
-						padding-left: 5px !important;
+					@media (min-device-width: 320px) and (max-device-width: 340px){
+						padding-right: 7px !important;
+						padding-left: 7px !important;
 					}
+					@media (min-device-width: 341px) and (max-device-width: 420px){
+						padding-right: 9px !important;
+						padding-left: 9px !important;
+					}
+					@media (min-device-width: 560px) and (max-device-width: 740px){
+						padding-right: 10px !important;
+						padding-left: 10px !important;
+					}
+					@media (min-device-width: 768px) and (max-device-width: 768px){
+						padding-right: 10px !important;
+						padding-left: 10px !important;
+					}
+					@media (min-width: 900px) and (max-width: 1000px){
+						padding-right: 15px !important;
+						padding-left: 15px !important;
+					}
+					@media (min-device-width: 1024px) and (max-device-width: 1200px){
+						padding-right: 20px !important;
+						padding-left: 20px !important;
+					}
+					
 				}
 
 			}
@@ -255,10 +331,11 @@ header{
 		.redes-spa{
 			padding-right: 0px !important;
 			padding-left: 3px !important;
+			width: 15%;
 			.redes{
 				float: right;
 				padding-top: 5px;
-				width: 100px;
+				width: 100%;
 				padding-left: 0px;
 				height: auto;
 				@media (max-width: 1200px){
@@ -276,7 +353,7 @@ header{
 					float: left;
 					border-left: 1px solid #FFF;
 					font-size: 1.5em;
-					width: 30px;
+					width: 25px;
 					line-height: 30px;
 					vertical-align: middle;
 					list-style:none;
@@ -284,6 +361,12 @@ header{
 					cursor: pointer;
 					@media (max-width: 992px){
 						font-size: 1em;
+						width: 25px;
+					}
+					@media (min-device-width: 1024px) and (max-device-width: 1200px){
+						width: 25px;
+					}
+					@media (min-width: 1024px) and (max-width: 1200px){
 						width: 25px;
 					}
 					a{
@@ -325,6 +408,14 @@ header{
 				padding-bottom: 6px;
 				@media (max-width: 620px){
 					font-size: 0.9em;
+				}
+				@media (min-device-width: 320px) and (max-device-width: 420px){
+					padding-right: 5px;
+					padding-left: 5px;
+				}
+				@media (min-device-width: 560px) and (max-device-width: 740px){
+					padding-right: 15px;
+					padding-left: 15px;
 				}
 				a{
 					color: #1E4C88;

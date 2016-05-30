@@ -11,12 +11,12 @@
 			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control right"><h2><i class="fa fa-angle-right"></i></h2></div>
 		</div>-->
 		<div class="row noticias">
-			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control left">
+			<div class="col-xs-2 col-sm-1 col-md-1 col-lg-1 control left">
 				<div class="autocenter">
 					<h3><i class="fa fa-angle-left"></i></h3>
 				</div>
 			</div>
-			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 newscontainer">
+			<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10 newscontainer">
 			<?php
 				$args=array(
 				  'post_type' => 'noticias',
@@ -47,9 +47,9 @@
 				wp_reset_query();// Restore global post data stomped by the_post().
 			?>
 			</div>
-			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control right">
+			<div class="col-xs-2 col-sm-1 col-md-1 col-lg-1 control right">
 				<div class="autocenter">
-					<h3><i class="fa fa-angle-right"></i></h3>
+					<h3><center><i class="fa fa-angle-right"></i></center></h3>
 				</div>
 			</div>
 		</div>

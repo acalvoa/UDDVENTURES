@@ -15,12 +15,12 @@
 		});
 		//CONTROLES
 		$(".EXTEND_redes .left").on('click',function(){
-			if($(".EXTEND_redes .activerow .containercol .newcol").length > 10){
+			if($(".EXTEND_redes .activerow .containercol .newcol").length > 4){
 				$(".EXTEND_redes .activerow .containercol .newcol").last().prependTo($(".EXTEND_redes .activerow .containercol"));
 			}
 		});
 		$(".EXTEND_redes .right").on('click',function(){
-			if($(".EXTEND_redes .activerow .containercol .newcol").length > 10){
+			if($(".EXTEND_redes .activerow .containercol .newcol").length > 4){
 				$(".EXTEND_redes .activerow .containercol .newcol").first().appendTo($(".EXTEND_redes .activerow .containercol"));
 			}
 		});

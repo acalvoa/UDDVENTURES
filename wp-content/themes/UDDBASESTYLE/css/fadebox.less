@@ -25,6 +25,15 @@
 		-moz-box-shadow: 4px 4px 5px 0px rgba(128,128,128,1);
 		box-shadow: 4px 4px 5px 0px rgba(128,128,128,1);
 		margin:auto;
+		@media (min-device-width: 320px) and (max-device-width: 420px){
+			width: 90%;
+		}
+		@media (min-width: 900px) and (max-width: 1000px){
+			width: 80%;
+		}
+		@media (min-device-width: 1024px) and (max-device-width: 1200px){
+			width: 80%;
+		}
 		.header{
 			background: #E96D54;
 			height: 7.5%;
@@ -91,6 +100,12 @@
 					min-width: 370px;
 					min-height: 370px;
 					overflow: hidden;
+					@media (min-device-width: 320px) and (max-device-width: 420px){
+						max-width: 150px;
+						max-height: 150px;
+						min-width: 150px;
+						min-height: 150px;
+					}
 					img{
 						height: 100%;
 						width: 100%;

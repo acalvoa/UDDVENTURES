@@ -2,10 +2,10 @@
 	<div class="background"><img src="<?php echo get_landing_alumnos_image(); ?>" /></div>
 	<div class="shade">
 		<div class="container">
-			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 				<div class="identificador">ALUMNOS</div>
 			</div>
-			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 				
 			</div>
 		</div>

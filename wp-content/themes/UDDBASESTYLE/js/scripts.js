@@ -15,6 +15,9 @@
 		$("#innovacion-link").on('click',function(){
 			location.href = "http://innovacion.udd.cl/"
 		});
+		$(".link").on('click',function(){
+			location.href = $(this).attr('link-data');
+		});
 		$("#quehacemos-link").on('click',function(){
 			location.href = $.ENTORNO+"/que-hacemos/";
 		});
@@ -41,6 +44,10 @@
 		});
 		$("#faq-link").on('click',function(){
 			location.href = $.ENTORNO+"/faq/";
+		});
+		$(".busquedaM").on('click',function(){
+			$(".menu-mobile").velocity({ translateX: "100%"});
+			$(".busquedah").show();
 		});
 		$(".busqueda").on('click',function(){
 			$(".busquedah").show();
@@ -76,6 +83,12 @@
 	        {
 	            $(".fadebox").hide();
 	        }
+	    });
+	    $(".mobile-menu").on('click', function(){
+	    	$(".menu-mobile").velocity({ translateX: "0"});
+	    })
+	    $(".menu-mobile .control").on('click', function(){
+	    	$(".menu-mobile").velocity({ translateX: "100%"});
 	    });
 	    $("#searchinput").keyup(function(event){
 	        var url = URL();

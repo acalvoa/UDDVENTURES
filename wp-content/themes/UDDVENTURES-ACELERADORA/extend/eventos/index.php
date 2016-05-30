@@ -28,6 +28,9 @@
 		?>
 		<div class="container eventos-container" data-id="<?php /*echo $vector;*/ ?>" style="<?php if($numero++ == 1) echo 'display:block;'; ?>">
 			<div class="row">
+				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 eventos-img visible-xs-block">
+					<img src="<?php echo get_eventos_image(); ?>" />	
+				</div>
 				<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 calendar-container">
 					<?php 
 						$eventos = array();
@@ -128,7 +131,7 @@
 					?>
 						
 				</div>
-				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 eventos-img">
+				<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 eventos-img visible-sm-block visible-md-block visible-lg-block">
 					<img src="<?php echo get_eventos_image(); ?>" />	
 				</div>
 			</div>

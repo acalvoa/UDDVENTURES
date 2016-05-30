@@ -46,12 +46,12 @@
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control right"><h2><i class="fa fa-angle-right"></i></h2></div>
 			</div>-->
 			<div class="row redes">
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control left">
+				<div class="col-xs-2 col-sm-1 col-md-1 col-lg-1 control left">
 					<div class="autocenter">
 						<h3><i class="fa fa-angle-left"></i></h3>
 					</div>
 				</div>
-				<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 containercol">
+				<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10 containercol">
 				<?php
 						if( $my_query->have_posts() ) {
 		  					while ($my_query->have_posts()){ 
@@ -64,7 +64,7 @@
 		  							"link"=>get_the_permalink()
 		  						);
 		  						?>
-		  						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 newcol" >
+		  						<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 newcol" >
 									<div class="image">
 										<img src="<?php echo $custom_fields['imagen']['value']['url']; ?>" />
 										<div class="background"  data='<?php echo json_encode($result); ?>'>
@@ -83,7 +83,7 @@
 					
 				?>
 				</div>
-				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 control right">
+				<div class="col-xs-2 col-sm-1 col-md-1 col-lg-1 control right">
 					<div class="autocenter">
 						<h3><i class="fa fa-angle-right"></i></h3>
 					</div>

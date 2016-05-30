@@ -6,7 +6,10 @@
 			</div>
 		</div>
 		<div class="row postulaciones" >
-			<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 postulaciones-items">
+			<div class="col-xs-12 visible-xs-block" id="postulaciones-imagen-landing">
+				<div class="postulaImg"><img src="<?php echo get_postula_image(); ?>" /></div>
+			</div>
+			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 postulaciones-items">
 				<div class="postulaciones-wrapper">
 					<?php
 						$args=array(
@@ -48,7 +51,7 @@
 					?>
 				</div>
 			</div>
-			<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" id="postulaciones-imagen-landing">
+			<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 visible-sm-block visible-md-block visible-lg-block" id="postulaciones-imagen-landing">
 				<div class="postulaImg"><img src="<?php echo get_postula_image(); ?>" /></div>
 			</div>
 		</div>

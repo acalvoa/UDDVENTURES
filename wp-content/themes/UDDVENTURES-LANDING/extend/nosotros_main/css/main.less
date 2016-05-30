@@ -1,6 +1,6 @@
 .EXTEND_main{
 	position: relative;
-	height: 804px;
+	height: 100%;
 	width: 100%;
 	@media (max-height: 1080px){
 		min-height: 1080px - 128px - 54px;
@@ -16,6 +16,9 @@
 	}
 	@media (max-height: 768px){
 		min-height: 768px - 128px  - 54px;
+	}
+	@media (min-device-width: 320px) and (max-device-width: 420px){
+		min-height: 250px;
 	}
 	.background{
 		position: absolute;
@@ -70,6 +73,15 @@
 				padding-left: 30px;
 				padding-top: 95px;
 				font-size: 1.2em;
+			}
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				width: 150px;
+		    	height: 150px;
+		    	margin-top: 50px;
+		    	padding-top: 0px;
+		    	line-height: 160px;
+		    	vertical-align: middle;
+		    	padding-left: 0px;
 			}
 		}
 		.landing-video{

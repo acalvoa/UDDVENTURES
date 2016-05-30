@@ -20,7 +20,7 @@
   						$my_query->the_post();
   						$custom_fields = get_field_objects();
   						?>
-  						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 newcol" <?php if($numero%3 == 0) echo 'style="padding-right: 0px;"'; ?> >
+  						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 newcol" <?php if($numero%3 == 0) echo 'style="padding-right: 0px;"'; ?> >
 							<div class="image">
 								<div class="img-obj">
 									<div class="img-container"><img src="<?php echo $custom_fields['imagen']['value']['url']; ?>" /></div>
