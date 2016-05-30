@@ -64,8 +64,8 @@
 						<div class="item link" link-data="/alumnos/">ALUMNOS</div>
 						<div class="item link" link-data="/aceleradora/">ACELERADORA</div>
 						<div class="item busquedaM" ><i class="fa fa-search" aria-hidden="true"></i> BUSCAR</div>
-						<div class="item " id="quienes-go">QUIENES SOMOS</div>
-						<div class="item " id="nosotros-go">NOSOTROS</div>
+						<div class="item quienes-go" id="quienes-go">QUIENES SOMOS</div>
+						<div class="item nosotros-go" id="nosotros-go">NOSOTROS</div>
 					</div>
 				</div>
 			</div>
@@ -75,8 +75,8 @@
 		<div class="container">
 			<div class="row">
 				<ul>
-					<li id="nosotros-go"><a>NOSOTROS</a></li>
-					<li id="quienes-go"><a>QUIENES SOMOS</a></li>
+					<li class="nosotros-go" id="nosotros-go"><a>NOSOTROS</a></li>
+					<li class="quienes-go" id="quienes-go"><a>QUIENES SOMOS</a></li>
 				</ul>
 			</div>
 		</div>

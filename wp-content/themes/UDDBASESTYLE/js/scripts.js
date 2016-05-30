@@ -12,19 +12,19 @@
 			$(".submenu-top li").removeClass("active");
 			$(this).addClass("active");	
 		});
-		$("#innovacion-link").on('click',function(){
+		$(".innovacion-link").on('click',function(){
 			location.href = "http://innovacion.udd.cl/"
 		});
 		$(".link").on('click',function(){
 			location.href = $(this).attr('link-data');
 		});
-		$("#quehacemos-link").on('click',function(){
+		$(".quehacemos-link").on('click',function(){
 			location.href = $.ENTORNO+"/que-hacemos/";
 		});
-		$("#postula-link").on('click',function(){
+		$(".postula-link").on('click',function(){
 			location.href = $.ENTORNO+"/postulaciones/";
 		});
-		$("#nosotros-link").on('click',function(){
+		$(".nosotros-link").on('click',function(){
 			location.href = $.ENTORNO+"/ventures/";
 		});
 		$("#redes-link").on('click',function(){
@@ -35,14 +35,14 @@
 			var top = $("#recursos").offset().top - 158;
 			$('body').scrollTop(top);
 		});
-		$("#contacto-link").on('click',function(){
+		$(".contacto-link").on('click',function(){
 			location.href = $.ENTORNO+"/contacto/";
 		});
 		$("#noticias-link").on('click',function(){
 			var top = $("#noticias").offset().top - 158;
 			$('body').scrollTop(top);
 		});
-		$("#faq-link").on('click',function(){
+		$(".faq-link").on('click',function(){
 			location.href = $.ENTORNO+"/faq/";
 		});
 		$(".busquedaM").on('click',function(){
@@ -70,11 +70,11 @@
 		$("header .logo").on('click', function(){
 			location.href = "/";
 		});
-		$("#nosotros-go").on('click', function(){
+		$(".nosotros-go").on('click', function(){
 			var top = $("#quehacemos").offset().top - 158;
 			$('body').scrollTop(top);
 		});
-		$("#quienes-go").on('click', function(){
+		$(".quienes-go").on('click', function(){
 			var top = $("#redes").offset().top - 158;
 			$('body').scrollTop(top);
 		});

@@ -31,14 +31,14 @@
 	  						if($custom_fields['estado_postulacion']['value']  || true){
 	  						?>
 	  						<div class="itemPostula row">
-								<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 numero nopadding">
+								<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 numero nopadding" >
 									<div class="figura" style="background-color: <?php echo $custom_fields['color_postulacion']['value']; ?>;"></div>
 								</div>
-								<div class="col-xs-offset-1 col-xs-9 col-sm-9 col-md-9 col-lg-9 texto">
+								<div class="col-xs-offset-1 col-xs-9 col-sm-9 col-md-9 col-lg-9 texto" style="border-color: <?php echo $custom_fields['color_postulacion']['value']; ?>;">
 									<div class="titulo"><h4><?php echo the_title(); ?></h4></div>
 									<div class="bajada"><?php echo the_content(); ?></div>
 								</div>
-								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 boton pull-right">
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 boton pull-right" style="border-color: <?php echo $custom_fields['color_postulacion']['value']; ?>;">
 									<div class="container-center">
 										<div class="buttons-wrapper">
 											<div class="button button-postulacion <?php if(!$is_active){ echo "closeb"; }?>" data-link="<?php if($is_active){ echo get_permalink(); } else { echo 'NOTLINK'; } ?>" style="background-color: <?php echo $custom_fields['color_postulacion']['value']; ?>;" data="<?php echo $numero++; ?>"><?php if($is_active){ echo "POSTULA"; } else{ echo "CERRADA"; }?></div>

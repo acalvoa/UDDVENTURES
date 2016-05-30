@@ -17,12 +17,12 @@
 		});
 		//CONTROLES
 		$(".EXTEND_noticias .left").on('click',function(){
-			if($(".EXTEND_noticias .newscontainer .newcol").length > 10){
+			if($(".EXTEND_noticias .newscontainer .newcol").length > 2){
 				$(".EXTEND_noticias .newscontainer .newcol").last().prependTo($(".EXTEND_noticias .newscontainer"));
 			}
 		});
 		$(".EXTEND_noticias .right").on('click',function(){
-			if($(".EXTEND_noticias .newscontainer .newcol").length > 10){
+			if($(".EXTEND_noticias .newscontainer .newcol").length > 2){
 				$(".EXTEND_noticias .newscontainer .newcol").first().appendTo($(".EXTEND_noticias .newscontainer"));
 			}
 		});

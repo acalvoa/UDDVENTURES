@@ -49,8 +49,8 @@
 				<!--<div class="col-sm-offset-1 col-md-offset-2 col-lg-offset-3 col-xs-5 col-sm-4 col-md-4 col-lg-4 menutext">-->
 				<div class="col-md-4 menutext pull-right visible-sm-block visible-md-block visible-lg-block" style="text-align:right">
 					<ul class="submenu-top">
-						<li><a id="innovacion-link">ECOSISTEMA i+E UDD</a></li>
-						<li><a id="nosotros-link">NOSOTROS</a></li>
+						<li><a class="innovacion-link" id="innovacion-link">ECOSISTEMA i+E UDD</a></li>
+						<li><a class="nosotros-link" id="nosotros-link">NOSOTROS</a></li>
 					</ul>
 				</div>
 				<div class="menu-mobile">

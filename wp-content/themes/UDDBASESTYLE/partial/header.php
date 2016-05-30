@@ -58,20 +58,20 @@
 						<div class="item link" link-data="/alumnos/">ALUMNOS</div>
 						<div class="item link" link-data="/aceleradora/">ACELERADORA</div>
 						<div class="item busquedaM" ><i class="fa fa-search" aria-hidden="true"></i> BUSCAR</div>
-						<div class="item" id="faq-link">FAQ'S</div>
-						<div class="item" id="contacto-link">CONTACTO</div>
-						<div class="item" id="quehacemos-link">QU&Eacute; HACEMOS</div>
-						<div class="item" id="postula-link">POSTULA</div>
+						<div class="item faq-link" id="faq-link">FAQ'S</div>
+						<div class="item contacto-link" id="contacto-link">CONTACTO</div>
+						<div class="item quehacemos-link" id="quehacemos-link">QU&Eacute; HACEMOS</div>
+						<div class="item postula-link" id="postula-link">POSTULA</div>
 					</div>
 				</div>
 				<!--<div class="col-lg-offset-1 col-md-offset-1 col-xs-5 col-sm-5 col-md-5 col-lg-5 menutext pull-right">-->
 
 				<div class="col-md-5 menutext pull-right visible-sm-block visible-md-block visible-lg-block" style="text-align:right">
 					<ul class="submenu-top">
-						<li><a id="faq-link">FAQ'S</a></li>
-						<li><a id="contacto-link">CONTACTO</a></li>
-						<li><a id="quehacemos-link">QU&Eacute; HACEMOS</a></li>
-						<li><a id="postula-link">POSTULA</a></li>
+						<li><a class="faq-link" id="faq-link">FAQ'S</a></li>
+						<li><a class="contacto-link" id="contacto-link">CONTACTO</a></li>
+						<li><a class="quehacemos-link" id="quehacemos-link">QU&Eacute; HACEMOS</a></li>
+						<li><a class="postula-link" id="postula-link">POSTULA</a></li>
 					</ul>
 				</div>
 			</div>

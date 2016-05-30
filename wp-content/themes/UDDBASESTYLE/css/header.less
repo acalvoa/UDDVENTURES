@@ -137,6 +137,7 @@ header{
 	.header{
 		padding: 7px;
 		background: #FFF;
+		min-height: 31px;
 		@media (max-width: 620px){
 			font-size: 0.78em;
 		}
@@ -173,12 +174,12 @@ header{
 						padding-left: 9px !important;
 					}
 					@media (min-device-width: 560px) and (max-device-width: 740px){
-						padding-right: 10px !important;
-						padding-left: 10px !important;
+						padding-right: 7px !important;
+						padding-left: 7px !important;
 					}
-					@media (min-device-width: 768px) and (max-device-width: 768px){
-						padding-right: 10px !important;
-						padding-left: 10px !important;
+					@media (min-device-width: 768px) and (max-device-width: 989px){
+						padding-right: 7px !important;
+						padding-left: 7px !important;
 					}
 					@media (min-width: 900px) and (max-width: 1000px){
 						padding-right: 15px !important;
@@ -276,6 +277,10 @@ header{
 			@media (max-width: 620px){
 				padding-right: 0px;
 			}
+			@media (min-device-width: 768px) and (max-device-width: 900px){
+				float: left;
+				width: 45%;
+			}
 		}
 		.submenu-top{
 			padding-top: 5px;
@@ -332,6 +337,10 @@ header{
 			padding-right: 0px !important;
 			padding-left: 3px !important;
 			width: 15%;
+			@media (min-device-width: 768px) and (max-device-width: 900px){
+					float: left;
+					width: 12%;
+			}
 			.redes{
 				float: right;
 				padding-top: 5px;

@@ -1,8 +1,9 @@
 @import "../../base/css/base.less";
 .EXTEND_quehacemos{
 	position: relative;
-	min-height: 704px;
+	min-height: 404px;
 	padding-bottom: 30px;
+	height: auto;
 	.header{
 		background: @color-header;
 		padding: 10px 0;
@@ -15,6 +16,9 @@
 		font-family: @header-font;
 		font-weight: lighter;
 		letter-spacing: 15px;
+		@media (min-device-width: 320px) and (max-device-width: 420px){
+			letter-spacing: 5px;
+		}
 	}
 	.quehacemos{
 		.left{
@@ -26,10 +30,19 @@
 		}
 		.quehacemos-item{
 			padding-left: 0px;
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				padding-right: 0px;
+			}
+			@media (min-device-width: 560px) and (max-device-width: 740px){
+				padding-right: 0px;
+			}
 		}
 		.newcol{
 			padding-left: 0px;
 			padding-right: 0px;
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				width: 100%;
+			}
 			&:first-child{
 				padding-left: 0px;
 			}
@@ -79,6 +92,9 @@
 						line-height: 40px;
 						vertical-align: middle;
 						font-size: 1.3em;
+						@media (min-device-width: 560px) and (max-device-width: 740px){
+							font-size: 1.1em;
+						}
 					}
 					.hover{
 						color: transparent;
