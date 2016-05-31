@@ -40,7 +40,7 @@
 				<div class="social_networks container-fluid">
 					<div class="row">
 						<div class="title col-xs-12 col-sm-12 col-md-12 col-lg-12">COMPARTIR</div>
-						<div class="content twitter col-xs-1 col-sm-1 col-md-1 col-lg-1 social" data-social="http://twitter.com/home?status=<?php echo urlencode(get_the_title()); ?>+<?php echo urlencode(get_permalink()); ?>"><i class="fa fa-twitter-square"></i></div>
+						<div class="content twitter col-xs-offset-10 col-sm-offset-10 col-md-offset-10 col-lg-offset-10 col-xs-1 col-sm-1 col-md-1 col-lg-1 social" data-social="http://twitter.com/home?status=<?php echo urlencode(get_the_title()); ?>+<?php echo urlencode(get_permalink()); ?>"><i class="fa fa-twitter-square"></i></div>
 						<div class="content col-xs-1 col-sm-1 col-md-1 col-lg-1 social" data-social="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>&title=<?php echo urlencode(get_the_title()); ?>"><i class="fa fa-facebook-official"></i></div>
 					</div>
 				</div>

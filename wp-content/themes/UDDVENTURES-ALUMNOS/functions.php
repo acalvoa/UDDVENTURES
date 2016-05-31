@@ -587,7 +587,7 @@ function remove_acf_menu()
     }
 
 }
-add_action( 'admin_menu', 'remove_acf_menu', 999 );
+//add_action( 'admin_menu', 'remove_acf_menu', 999 );
 //INDEX ADICIONAL DATA
 function FESaddpost_id($document, $post){
     $metadata = get_field_objects($post->ID);

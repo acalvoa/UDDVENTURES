@@ -5,7 +5,15 @@
 <section class="EXTEND_noticias" id="noticias">
 	<div class="container">	
 		<div class="row noticia_article">
-
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 imagemobile">
+				<div class="object">
+					<img src="<?php echo $custom_fields['imagen_noticia']['value']['url']; ?>" />
+				</div>
+				<div class="row social_networks">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title">COMPARTIR</div>
+					<div class="content social" ><i class="fa fa-twitter-square" data-social="http://twitter.com/home?status=<?php echo urlencode(get_the_title()); ?>+<?php echo urlencode(get_permalink()); ?>"></i><i class="fa fa-facebook-official" data-social="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>&title=<?php echo urlencode(get_the_title()); ?>"></i></div>
+				</div>
+			</div>
 			<!--<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 left"><h2><i class="fa fa-angle-left"></i></h2></div> -->
 			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 content">
 				<div class="date"><?php echo $custom_fields['fecha_noticia']['value']; ?></div>

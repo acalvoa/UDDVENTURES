@@ -8,6 +8,12 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 subheader">
 				<?php 
+					function escapeJsonString($value) { # list from www.json.org: (\b backspace, \f formfeed)
+					    $escapers = array("\\", "/", "\"", "\n", "\r", "\t", "\x08", "\x0c");
+					    $replacements = array("\\\\", "\\/", "\\\"", "\\n", "\\r", "\\t", "\\f", "\\b");
+					    $result = str_replace($escapers, $replacements, $value);
+					    return $result;
+					}
 					$numero = 1;
 					$category = array();
 					$taxonomies = get_object_taxonomies('eventos');
@@ -33,6 +39,7 @@
 				</div>
 				<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 calendar-container">
 					<?php 
+
 						$eventos = array();
 						$args=array(
 						  'post_type' => 'eventos',
@@ -52,7 +59,7 @@
 		  					while ($my_query->have_posts()){ 
 		  						$my_query->the_post();
 		  						$custom_fields = get_field_objects();
-		  						$eventos[$custom_fields['fecha_evento']['value']] = array(
+		  						$eventos[trim($custom_fields['fecha_evento']['value'])] = array(
 		  							"title"=> get_the_title(),
 		  							"content" => get_the_content(),
 		  							"image" =>  $custom_fields['imagen_evento']['value']['url'],
@@ -62,7 +69,6 @@
 		  					}
 						}
 						wp_reset_query();
-
 						for($j=date('n');$j<=12;$j++){
 							$week = 1;
 							for($i=1;$i<=date('t',strtotime(date('Y').'-'.$j.'-1'));$i++) {
@@ -114,7 +120,7 @@
 													<?php 
 													for ($i=1;$i<=7;$i++) {
 														$fecha = date('d/m/Y',strtotime(date('Y')."/".$key."/".$days[$i]));
-														if(array_key_exists($fecha,$eventos)) echo '<td class="mark" data=\''.json_encode($eventos[$fecha]).'\' >';
+														if(array_key_exists($fecha,$eventos)) echo '<td class="mark" title=\''.$eventos[$fecha]['title'].'\' content=\''.$eventos[$fecha]['content'].'\' image=\''.$eventos[$fecha]['image'].'\' link=\''.$eventos[$fecha]['link'].'\' >';
 														else echo '<td>';
 														?>
 															<?php echo isset($days[$i]) ? $days[$i] : ''; ?>

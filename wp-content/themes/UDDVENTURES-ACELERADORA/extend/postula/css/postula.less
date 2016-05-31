@@ -87,8 +87,8 @@
 				padding-bottom: 10px;
 			}
 			.postulaciones-wrapper{
-				display: table-cell;
 				vertical-align: middle;
+				padding-top: 5px;
 			}
 			.itemPostula{
 				@height: 56px;
@@ -405,6 +405,7 @@
 					height: 100%;
 					font-size: 0.9em;
 					padding-right: 0px;
+
 					.container-center{
 						text-align: center;
 						width: 100%;
@@ -456,6 +457,12 @@
 	.postula_article{
 		min-height: 804px;
 		margin-top: 20px;
+		@media (min-device-width: 320px) and (max-device-width: 420px){
+			min-height: 0px;
+		}
+		@media (min-device-width: 560px) and (max-device-width: 740px){
+			min-height: 0px;
+		}
 		.left{
 			font-size: 2em;
 			min-height: 804px;
@@ -467,6 +474,12 @@
 		}
 		.content{
 			text-align: left;
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				width: 100%;
+			}
+			@media (min-device-width: 560px) and (max-device-width: 740px){
+				width: 70%;
+			}
 			.title{
 				padding-bottom: 5px;
 				@media (max-width: 1200px){
@@ -492,7 +505,60 @@
 				font-size: 0.8em;
 			}
 		}
+		.imagemobile{
+			display: none;
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				display: block
+			}
+			@media (min-device-width: 560px) and (max-device-width: 740px){
+			}
+			.object{
+				max-height: 410px;
+				overflow: hidden;
+				margin-top: 30px;
+				@media (min-device-width: 320px) and (max-device-width: 420px){
+					margin-top: 0px;
+				}
+				img{
+					width: 100%;
+				}
+			}
+			.boton{
+				width: 90%;
+				margin-bottom: 15px;
+				font-size: 14px;
+				line-height: 45px;
+				color: #FFF;
+				vertical-align: middle;
+				min-height: 45px;
+				text-align: center;
+				background: #CCC;
+				border-radius: 5px;
+				cursor: pointer;
+				@media (max-width: 1200px){
+					font-size: 0.4em;
+				}
+				@media (max-width: 992px){
+				}
+				@media (max-width: 750px){
+					font-size: 0.3em;
+				}
+				@media (min-device-width: 320px) and (max-device-width: 420px){
+					font-size: 13px !important;
+					width: 32%;
+					margin-left: 1%;
+					float: left;
+				}
+				
+			}
+		}
 		.image{
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				display: none;
+			}
+			@media (min-device-width: 560px) and (max-device-width: 740px){
+				width: 30%;
+			}
 			.object{
 				max-height: 410px;
 				overflow: hidden;
@@ -520,6 +586,9 @@
 				}
 				@media (max-width: 750px){
 					font-size: 0.3em;
+				}
+				@media (min-device-width: 560px) and (max-device-width: 740px){
+					font-size: 16px !important;
 				}
 			}
 

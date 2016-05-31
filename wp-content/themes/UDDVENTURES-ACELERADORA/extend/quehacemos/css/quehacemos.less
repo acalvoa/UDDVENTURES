@@ -62,7 +62,7 @@
 
 				.img-obj{
 					width: 100%;
-					height: 360px;
+					height: 100%;
 					.img-container{
 						position: relative;
 						width: 100%;
@@ -163,11 +163,19 @@
 		.content-text{
 			display: none;
 			.title{
-
+				h3{
+					@media (min-device-width: 320px) and (max-device-width: 420px){
+						font-size: 1.5em;
+					}
+				}
+				
 			}
 			.content{
 				text-align: left;
 				font-size: 0.8em;
+				@media (min-device-width: 320px) and (max-device-width: 420px){
+					font-size: 0.7em;
+				}
 			}
 		}
 	}

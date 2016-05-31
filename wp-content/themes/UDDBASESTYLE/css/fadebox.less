@@ -28,16 +28,32 @@
 		@media (min-device-width: 320px) and (max-device-width: 420px){
 			width: 90%;
 		}
+		@media (min-device-width: 560px) and (max-device-width: 740px){
+			width: 90%;
+			min-height: 260px;
+			height: 300px;
+			top: 10px;
+			left: 5%;
+			right: auto;
+			bottom: auto;
+			margin: none;
+		}
 		@media (min-width: 900px) and (max-width: 1000px){
 			width: 80%;
 		}
 		@media (min-device-width: 1024px) and (max-device-width: 1200px){
 			width: 80%;
 		}
+		@media (min-device-width: 768px) and (max-device-width: 900px){
+			width: 90%;
+		}
 		.header{
 			background: #E96D54;
 			height: 7.5%;
 			text-transform: uppercase;
+			@media (min-device-width: 560px) and (max-device-width: 740px){
+				height: 12%;
+			}
 			.closebtn{
 				height: 100%;
 				font-weight: normal;
@@ -48,6 +64,12 @@
 				right: 0px;
 				top:0px;
 				cursor: pointer;
+				@media (min-device-width: 320px) and (max-device-width: 420px){
+					font-size: 0.8em;
+				}
+				@media (min-device-width: 560px) and (max-device-width: 740px){
+				}
+
 			}
 			.closebtn i{
 				font-size: 13px;
@@ -56,35 +78,79 @@
 				margin-top: 5px;
 				float: right;
 				padding-left: 5px;
+				@media (min-device-width: 320px) and (max-device-width: 420px){
+					margin-top: 2px;
+				}
+				@media (min-device-width: 560px) and (max-device-width: 740px){
+				}
 			}
 		}
 		.body{
 			position: relative;
 			height: 92.5%;
 			width: 100%;
+			@media (min-device-width: 320px) and (max-device-width: 420px){
+				overflow-y: scroll;
+			}
+			@media (min-device-width: 560px) and (max-device-width: 740px){
+				overflow-y: scroll;
+			}
+			@media (min-device-width: 768px) and (max-device-width: 900px){
+				overflow-y: scroll;
+			}
 			.contenido{
 				float: left;
 				width: 50%;
 				height: 100%;
+				@media (min-device-width: 320px) and (max-device-width: 420px){
+					width: 100%;
+					height: auto;
+				}
+				@media (min-device-width: 560px) and (max-device-width: 740px){
+					width: 60%;
+					height: auto;
+				}
+				@media (min-device-width: 768px) and (max-device-width: 900px){
+					width: 60%;
+					height: auto;
+				}
 				.titulo{
 					position: relative;
-					height: 50px;
+					height: auto;
 					width: 100%;
 					padding: 25px;
-					padding-bottom: 0px;
+					padding-bottom: 10px;
 					padding-top: 13px;
 					font-size: 1.2em;
 					color: #E96D54;
+					@media (min-device-width: 320px) and (max-device-width: 420px){
+						height: auto;
+						padding-bottom: 20px;
+						font-size: 1em;
+					}
+					@media (min-device-width: 560px) and (max-device-width: 740px){
+						height: auto;
+						padding-bottom: 10px;
+						font-size: 1em;
+					}
 				}
 				.contenido{
 					position: relative;
-					height: 80%;
+					height: auto;
 					width: 100%;
 					padding: 25px;
 					padding-top: 0px;
 					text-align: left;
 					font-size: 0.9em;
 					overflow: hidden;
+					@media (min-device-width: 320px) and (max-device-width: 420px){
+						height: auto;
+						font-size: 0.7em;
+					}
+					@media (min-device-width: 560px) and (max-device-width: 740px){
+						height: auto;
+						font-size: 0.7em;
+					}
 				}
 
 			}
@@ -92,6 +158,15 @@
 				float: left;
 				width: 50%;
 				padding: 25px;
+				@media (min-device-width: 320px) and (max-device-width: 420px){
+					display: none;
+				}
+				@media (min-device-width: 560px) and (max-device-width: 740px){
+					width: 40%;
+				}
+				@media (min-device-width: 768px) and (max-device-width: 900px){
+					width: 40%;
+				}
 				.container-foto{
 					float: right;
 					padding-bottom: 0px;
@@ -106,6 +181,41 @@
 						min-width: 150px;
 						min-height: 150px;
 					}
+					@media (min-device-width: 560px) and (max-device-width: 740px){
+						max-width: 150px;
+						max-height: 150px;
+						min-width: 150px;
+						min-height: 150px;
+					}
+					@media (min-device-width: 768px) and (max-device-width: 900px){
+						width: 100%;
+						max-width: none;
+						max-height: none;
+						min-height: 0px;
+						min-width: 0px;
+					}
+					img{
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+			.fotomobile{
+				float: left;
+				width: 50%;
+				padding: 25px;
+				display: none;
+				@media (min-device-width: 320px) and (max-device-width: 420px){
+					display: block;
+					width: 100%;
+				}
+				@media (min-device-width: 560px) and (max-device-width: 740px){
+				}
+				.container-foto{
+					float: right;
+					padding-bottom: 0px;
+					width: 100%;
+					overflow: hidden;
 					img{
 						height: 100%;
 						width: 100%;

@@ -16,6 +16,19 @@
 	</div>
 	<div class="container">
 		<div class="row postula_article">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 imagemobile">
+				<div class="object">
+					<img src="<?php echo $custom_fields['imagen_postulacion']['value']['url']; ?>" />
+				</div>
+				<div class="row social_networks">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title">COMPARTIR</div>
+					<div class="content social" ><i class="fa fa-twitter-square" data-social="http://twitter.com/home?status=<?php echo urlencode(get_the_title()); ?>+<?php echo urlencode(get_permalink()); ?>"></i><i class="fa fa-facebook-official" data-social="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>&title=<?php echo urlencode(get_the_title()); ?>"></i></div>
+				</div>
+				<br>
+				<div class="postula-btn boton link" data-link="<?php echo $custom_fields['link_postulacion']['value'];?>" style="background-color: <?php echo $custom_fields['color_postulacion']['value']; ?>; display: <?php if($is_active) echo 'block'; else echo 'none'; ?>;">POSTULA</div>
+				<div class="bases boton link" data-link="<?php echo $custom_fields['archivo_de_bases']['value']['url'];?>" style="background-color: <?php echo $custom_fields['color_postulacion']['value']; ?>; display: <?php if($custom_fields['checkbox_bases']['value']) echo 'block'; else echo 'none'; ?>;">BASES</div>
+				<div class="formulario boton link" data-link="<?php echo $custom_fields['archivo_formulario']['value']['url'];?>" style="background-color: <?php echo $custom_fields['color_postulacion']['value']; ?>; display: <?php if($custom_fields['checkbox_formulario']['value']) echo 'block'; else echo 'none'; ?>;">FORMULARIO</div>
+			</div>
 			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 content">
 				<div class="date"><h5>Desde <?php echo date("d/m/Y h:i:s",$custom_fields['fecha_init_postulacion']['value']); ?>, Hasta: <?php echo date("d/m/Y h:i:s",$custom_fields['fecha_finish_postulacion']['value']); ?></h5></div>
 				<div class="title"><h3><?php the_title(); ?></h3></div>
