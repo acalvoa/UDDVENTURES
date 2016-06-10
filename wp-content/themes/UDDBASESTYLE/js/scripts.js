@@ -70,11 +70,11 @@
 		$("header .logo").on('click', function(){
 			location.href = "/";
 		});
-		$(".nosotros-go").on('click', function(){
+		$("#nosotros-go").on('click', function(){
 			var top = $("#quehacemos").offset().top - 158;
 			$('body').scrollTop(top);
 		});
-		$(".quienes-go").on('click', function(){
+		$("#quienes-go").on('click', function(){
 			var top = $("#redes").offset().top - 158;
 			$('body').scrollTop(top);
 		});

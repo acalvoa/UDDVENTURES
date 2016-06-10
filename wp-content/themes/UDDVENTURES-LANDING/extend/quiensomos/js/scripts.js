@@ -55,6 +55,7 @@
 			tw.on('click',function(){
 				window.open('hhttp://twitter.com/home?status='+obj.title+'+'+obj.link,"", "width=800, height=400");
 			});
+			foto.clone().attr("class","fotomobile").prependTo(body);
 		});
 		//DECLARAMOS EL LINK BACK EN EL POST
 		$(".EXTEND_redes .left-back").on('click',function(){
