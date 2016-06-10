@@ -19,7 +19,7 @@
 			
 		});
 		//DECLARAMOS LAS REDES SOCIALES
-		$(".EXTEND_quehacemos .quehacemos .social").on('click',function(){
+		$(".EXTEND_quehacemos .quehacemos .social i").on('click',function(){
 			window.open($(this).attr('data-social'),"_blank", "height=500,width=700");
 		});
 		$(".EXTEND_quehacemos .left").on('click',function(){

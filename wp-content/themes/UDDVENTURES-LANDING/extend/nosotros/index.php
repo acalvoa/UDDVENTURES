@@ -38,7 +38,10 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="row social_networks">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title">COMPARTIR</div>
-					<div class="content social" ><i class="fa fa-twitter-square" data-social="http://twitter.com/home?status=<?php echo urlencode(get_the_title()); ?>+<?php echo urlencode(get_permalink()); ?>"></i><i class="fa fa-facebook-official" data-social="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>&title=<?php echo urlencode(get_the_title()); ?>"></i></div>
+					<div class="content social" >
+					<i class="fa fa-twitter-square" data-social="http://twitter.com/home?status=<?php echo urlencode(get_the_title()); ?>+<?php echo urlencode(get_permalink()); ?>"></i>
+					<i class="fa fa-facebook-official" data-social="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>&title=<?php echo urlencode(get_the_title()); ?>"></i>
+				</div>
 				</div>
 			</div>
 			<?php

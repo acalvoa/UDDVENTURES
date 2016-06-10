@@ -2,7 +2,7 @@
 	$upload_dir = wp_upload_dir();
 ?>
 <section class="EXTEND_main">
-	<div class="background"><img src="<?php echo $upload_dir['baseurl']; ?>/2015/08/2_home_nosotros.jpg" /></div>
+	<div class="background" style="background-image: url('<?php echo $upload_dir['baseurl']; ?>/2015/08/2_home_nosotros.jpg');"></div>
 	<div class="shade">
 		<div class="container">
 			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">

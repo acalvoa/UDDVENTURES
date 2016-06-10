@@ -34,7 +34,7 @@
 			window.history.back();
 		});
 		//DECLARAMOS LAS REDES SOCIALES
-		$(".EXTEND_noticias .noticia_article .social").on('click',function(){
+		$(".EXTEND_noticias .noticia_article .social i").on('click',function(){
 			window.open($(this).attr('data-social'),"_blank", "height=500,width=700");
 		});
 	});
