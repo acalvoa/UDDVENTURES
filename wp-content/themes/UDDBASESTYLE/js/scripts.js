@@ -29,7 +29,7 @@
 		});
 		$("#redes-link").on('click',function(){
 			var top = $("#redes").offset().top - 158;
-			$('body').scrollTop(top);
+			$('html').scrollTop(top);
 		});
 		$("#recursos-link").on('click',function(){
 			var top = $("#recursos").offset().top - 158;

@@ -53,7 +53,7 @@
 						<li><a id="nosotros-link">NOSOTROS</a></li>
 					</ul>
 				</div>
-				<div class="menu-mobile">
+				<div class="menu-mobile visible-xs-block">
 					<div class="control">
 						<div class="center">
 							<i class="fa fa-angle-right"></i>

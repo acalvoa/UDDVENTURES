@@ -47,7 +47,7 @@
 				<div class="col-xs-2 visible-xs-block mobile-menu">
 					<i class="fa fa-bars" aria-hidden="true"></i>
 				</div>
-				<div class="menu-mobile">
+				<div class="menu-mobile visible-xs-block">
 					<div class="control">
 						<div class="center">
 							<i class="fa fa-angle-right"></i>

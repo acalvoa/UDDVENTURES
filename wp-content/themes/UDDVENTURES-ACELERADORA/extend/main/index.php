@@ -1,5 +1,5 @@
 <section class="EXTEND_main">
-	<div class="background"><img src="<?php echo get_landing_aceleradora_image(); ?>" /></div>
+	<div class="background" style="background-image: url('<?php echo get_landing_aceleradora_image(); ?>');"></div>
 	<div class="shade">
 		<div class="container">
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 cell">
